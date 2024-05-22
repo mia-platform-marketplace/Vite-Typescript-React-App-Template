@@ -45,7 +45,7 @@ module.exports = {
         "newlines-between": "always"
       }
     ],
-    "no-console": 2,
+    "no-console": 1,
     "no-unused-vars": 2,
     "object-curly-spacing": [
       2,

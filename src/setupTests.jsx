@@ -1,5 +1,6 @@
 // import {toMatchDiffSnapshot} from 'snapshot-diff'
 import '@testing-library/jest-dom/vitest'
+import '@testing-library/jest-dom'
 
 // import strings from './strings'
 // import '../../../common-setup-tests'

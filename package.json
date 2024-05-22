@@ -16,10 +16,11 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "antd": "^5.16.4",
     "jest-environment-jsdom": "^29.7.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-intl": "^6.6.8",
+    "react-router-dom": "^6.23.1"
   },
   "devDependencies": {
     "@staticdeploy/mock-server": "^3.0.0",
