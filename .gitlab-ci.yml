@@ -1,0 +1,18 @@
+include:
+  - file: "/build/node/template-react-yarn.yml"
+    project: "platform/pipelines-templates"
+    ref: "master"
+
+.docker-job:
+  variables:
+    COMMIT_SHA_FILEPATH: /etc/nginx/commit.sha
+
+default:
+  image: node:hydrogen-alpine
+
+test:
+  script:
+    - yarn lint
+
+variables:
+  IMAGE_NAME: p4samd-goverance/react-template
