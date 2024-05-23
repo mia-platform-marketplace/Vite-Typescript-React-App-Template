@@ -30,7 +30,7 @@ export default defineConfig(({ command, mode }) => {
       coverage: {
         exclude: [
           ...configDefaults.exclude,
-          'build', 'mock-server', 'src/__mocks__', '.eslintrc.cjs']
+          'build', 'mock-server', 'src/__mocks__', '.eslintrc.cjs', 'src/strings']
       }
     },
     server: {
