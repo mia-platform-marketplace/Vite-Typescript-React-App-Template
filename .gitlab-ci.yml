@@ -15,4 +15,4 @@ test:
     - yarn lint
 
 variables:
-  IMAGE_NAME: p4samd-goverance/react-template
+  IMAGE_NAME: #ADD IMAGE NAME
