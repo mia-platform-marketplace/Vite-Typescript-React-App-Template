@@ -1,5 +1,5 @@
 module.exports = {
-  "ignorePatterns": ['dist', '.eslintrc.cjs', 'jest.config.ts', 'vite.config.ts' ,"src/**/*.test.*"],
+  "ignorePatterns": ['dist', '.eslintrc.cjs', 'jest.config.ts', 'vite.config.ts', "src/**/*.test.*", "scripts/*"],
   "env": {
     "browser": true,
     "es2021": true,
@@ -17,7 +17,8 @@ module.exports = {
   "extends": [
     "plugin:jsx-a11y/recommended",
     "plugin:react/recommended",
-    "standard"
+    "standard",
+    "eslint:recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -33,6 +34,11 @@ module.exports = {
     "@typescript-eslint"
   ],
   "rules": {
+    "consistent-return": 0,
+    "indent"           : [1, 2],
+    "no-else-return"   : 1,
+    "semi"             : [1, "never"],
+    "space-unary-ops"  : 2,
     "import/order": [
       2,
       {
@@ -112,26 +118,3 @@ module.exports = {
     "import/no-absolute-path":"off"
 }
 }
-
-
-
-
-
-// {
-//   root: true,
-//   env: { browser: true, es2020: true },
-//   extends: [
-//     'eslint:recommended',
-//     'plugin:@typescript-eslint/recommended',
-//     'plugin:react-hooks/recommended',
-//   ],
-//   ignorePatterns: ['dist', '.eslintrc.cjs'],
-//   parser: '@typescript-eslint/parser',
-//   plugins: ['react-refresh'],
-//   rules: {
-//     'react-refresh/only-export-components': [
-//       'warn',
-//       { allowConstantExport: true },
-//     ],
-//   },
-// }

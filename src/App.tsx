@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
 
-import viteLogo from '/vite.svg'
-
-import reactLogo from './assets/react.svg'
+import {ReactComponent as ReactLogo} from './assets/react.svg'
 
 import './App.css'
+
+const viteLogo = '/vite.svg'
 
 const App: React.FunctionComponent = () => {
   const [count, setCount] = useState(0)
@@ -16,7 +16,7 @@ const App: React.FunctionComponent = () => {
           <img alt="Vite logo" className="logo" src={viteLogo} />
         </a>
         <a href="https://react.dev" rel="noreferrer" target="_blank">
-          <img alt="React logo" className="logo react" src={reactLogo} />
+          <ReactLogo className="logo react" />
         </a>
       </div>
       <h1>Vite + React</h1>

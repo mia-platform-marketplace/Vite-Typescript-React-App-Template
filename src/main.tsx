@@ -1,3 +1,5 @@
+/// <reference types="vite-plugin-svgr/client" />
+
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {IntlProvider} from 'react-intl'
@@ -13,16 +15,16 @@ const language = messages[navigatorLanguage] ? navigatorLanguage : 'en'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-      <PromiseComponent promiseFunction={() => messages[language]}>
-        {strings => (
-          <IntlProvider locale={language} messages={strings}>
-            <BrowserRouter>
-              <Routes>
-                <Route element={<App />} path='/' />
-              </Routes>
-            </BrowserRouter>
-          </IntlProvider>
-        )}
+    <PromiseComponent promiseFunction={() => messages[language]}>
+      {(strings: any) => (
+        <IntlProvider locale={language} messages={strings}>
+          <BrowserRouter>
+            <Routes>
+              <Route element={<App />} path='/' />
+            </Routes>
+          </BrowserRouter>
+        </IntlProvider>
+      )}
     </PromiseComponent>
   </React.StrictMode>
 )
