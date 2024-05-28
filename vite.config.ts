@@ -1,20 +1,23 @@
 /// <reference types="vitest" />
-import { defineConfig } from 'vitest/config'
+import {defineConfig, configDefaults} from 'vitest/config'
 import react from '@vitejs/plugin-react-swc'
-import { configDefaults } from 'vitest/config'
 import {resolve} from 'path'
-import checker from 'vite-plugin-checker';
+import checker from 'vite-plugin-checker'
+import svgr from 'vite-plugin-svgr'
 
 // https://vitejs.dev/config/
-export default defineConfig(({ command, mode }) => {
-
+export default defineConfig(({command, mode}) => {
   return {
     base: './',
     plugins: [
       react(),
       checker({
-        typescript: true,
+        typescript: true
       }),
+      svgr({
+        svgrOptions: { exportType: "default", ref: true, svgo: false, titleProp: true },
+        include: "**/*.svg",
+      })
     ],
     test: {
       globals: true,
@@ -22,7 +25,7 @@ export default defineConfig(({ command, mode }) => {
       mockReset: true,
       logHeapUsage: true,
       reporters: [
-        'default',
+        'default'
       ],
       setupFiles: [
         resolve(__dirname, 'src/setupTests.jsx')
@@ -34,11 +37,10 @@ export default defineConfig(({ command, mode }) => {
       }
     },
     server: {
-      port: 3000,
+      port: 3000
     },
     build: {
       outDir: 'build'
-    },
-  
+    }
   }
 })
