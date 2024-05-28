@@ -16,7 +16,7 @@ const language = messages[navigatorLanguage] ? navigatorLanguage : 'en'
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <PromiseComponent promiseFunction={() => messages[language]}>
-      {strings => (
+      {(strings: any) => (
         <IntlProvider locale={language} messages={strings}>
           <BrowserRouter>
             <Routes>
