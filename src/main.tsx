@@ -1,5 +1,10 @@
 /// <reference types="vite-plugin-svgr/client" />
 
+/*
+ * Copyright © 2022-present Mia s.r.l.
+ * All rights reserved
+ */
+
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {IntlProvider} from 'react-intl'

@@ -1,5 +1,9 @@
-// eslint-disable-next-line no-undef
+/*
+ * Copyright © 2022-present Mia s.r.l.
+ * All rights reserved
+ */
+
 module.exports = {
-    __esModule: true,
-    default: 'test-file-stub',
-};
+  __esModule: true,
+  default: 'test-file-stub'
+}

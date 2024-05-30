@@ -1,3 +1,8 @@
+/*
+ * Copyright © 2022-present Mia s.r.l.
+ * All rights reserved
+ */
+
 import React, {useState} from 'react'
 
 import {ReactComponent as ReactLogo} from './assets/react.svg'

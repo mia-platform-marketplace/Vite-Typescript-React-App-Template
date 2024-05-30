@@ -1,11 +1,13 @@
-// import {toMatchDiffSnapshot} from 'snapshot-diff'
+/*
+ * Copyright © 2022-present Mia s.r.l.
+ * All rights reserved
+ */
+
 import '@testing-library/jest-dom/vitest'
 import '@testing-library/jest-dom'
 
 // import strings from './strings'
 // import '../../../common-setup-tests'
-
-// expect.extend({toMatchDiffSnapshot})
 
 // Enzyme.configure({adapter: new Adapter()})
 
