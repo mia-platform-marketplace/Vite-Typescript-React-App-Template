@@ -2,7 +2,7 @@
  * Copyright © 2022-present Mia s.r.l.
  * All rights reserved
  */
-
+import '@testing-library/jest-dom'
 import {FormattedMessage, IntlProvider} from 'react-intl'
 import {waitFor} from '@testing-library/react'
 import { describe, expect, test, vi } from 'vitest';
@@ -26,7 +26,7 @@ describe('PromiseComponent', () => {
       </PromiseComponent>
     )
     await waitFor(
-      () => expect(element.getByText('Learn React')).toBeTruthy()
+      () => expect(element.getByText('Learn React')).toBeInTheDocument()
     )
   })
 
@@ -40,7 +40,7 @@ describe('PromiseComponent', () => {
     )
 
     await waitFor(
-      () => expect(element.getByText('Error')).toBeTruthy()
+      () => expect(element.getByText('Error')).toBeInTheDocument()
     )
   })
 
@@ -54,7 +54,7 @@ describe('PromiseComponent', () => {
     )
 
     await waitFor(
-      () => expect(element.getByText('Loading...')).toBeTruthy()
+      () => expect(element.getByText('Loading...')).toBeInTheDocument()
     )
   })
 })
