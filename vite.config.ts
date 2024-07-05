@@ -4,13 +4,17 @@ import react from '@vitejs/plugin-react-swc'
 import {resolve} from 'path'
 import checker from 'vite-plugin-checker'
 import svgr from 'vite-plugin-svgr'
+import packageJson from './package.json'
+import microLc from './plugins/vite-plugin-micro-lc'
+import {qiankunWindow} from 'vite-plugin-qiankun/dist/helper'
 
 // https://vitejs.dev/config/
 export default defineConfig(({command, mode}) => {
   return {
-    base: './',
+    base: './', //TODO: mettere path di microlc
     plugins: [
       react(),
+      ...(qiankunWindow.__POWERED_BY_QIANKUN__ ? [microLc(packageJson.name)] : []),
       checker({
         typescript: true
       }),
