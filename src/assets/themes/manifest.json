@@ -1,0 +1,48 @@
+{
+  "name": "Design Tokens",
+  "collections": {
+    "1": {
+      "modes": {
+        " Colors": [
+          "1. Colors.Standard.tokens.json",
+          "1. Colors.Alternate.tokens.json"
+        ]
+      }
+    },
+    "2": {
+      "modes": {
+        " Dimensions": [
+          "2. Dimensions.Default.tokens.json",
+          "2. Dimensions.Compact.tokens.json"
+        ]
+      }
+    },
+    "3": {
+      "modes": {
+        " Typography": [
+          "3. Typography.Default.tokens.json",
+          "3. Typography.Compact.tokens.json"
+        ]
+      }
+    },
+    "4": {
+      "modes": {
+        " Components": [
+          "4. Components.Standard.tokens.json",
+          "4. Components.Alternate.tokens.json"
+        ]
+      }
+    }
+  },
+  "styles": {
+    "text": [
+      "text.styles.tokens.json"
+    ],
+    "effect": [
+      "effect.styles.tokens.json"
+    ],
+    "grid": [
+      "grid.styles.tokens.json"
+    ]
+  }
+}

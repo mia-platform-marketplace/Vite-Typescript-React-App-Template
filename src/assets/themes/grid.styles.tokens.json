@@ -1,0 +1,30 @@
+{
+  "1440px - 12 col": {
+    "$type": "grid",
+    "$value": [
+      {
+        "pattern": "columns",
+        "visible": true,
+        "alignment": "stretch",
+        "color": "#ff00001a",
+        "gutterSize": "24px",
+        "count": 12,
+        "offset": "120px"
+      }
+    ]
+  },
+  "1440px - 24 col": {
+    "$type": "grid",
+    "$value": [
+      {
+        "pattern": "columns",
+        "visible": true,
+        "alignment": "stretch",
+        "color": "#ff00001a",
+        "gutterSize": "24px",
+        "count": 24,
+        "offset": "24px"
+      }
+    ]
+  }
+}

@@ -6,15 +6,16 @@ import checker from 'vite-plugin-checker'
 import svgr from 'vite-plugin-svgr'
 import packageJson from './package.json'
 import microLc from './plugins/vite-plugin-micro-lc'
-import {qiankunWindow} from 'vite-plugin-qiankun/dist/helper'
+import { BASE } from './src/utils'
+import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig(({command, mode}) => {
   return {
-    base: './', //TODO: mettere path di microlc
+    base: BASE,
     plugins: [
       react(),
-      ...(qiankunWindow.__POWERED_BY_QIANKUN__ ? [microLc(packageJson.name)] : []),
+      // microLc(packageJson.name), //TODO: import this only if you use it on microlc env 
       checker({
         typescript: true
       }),
@@ -23,6 +24,12 @@ export default defineConfig(({command, mode}) => {
         include: "**/*.svg",
       })
     ],
+    resolve: {
+      alias: {
+        src: "/src",
+        '@': fileURLToPath(new URL('./src', import.meta.url))
+      },
+    },
     test: {
       globals: true,
       environment: 'jsdom',

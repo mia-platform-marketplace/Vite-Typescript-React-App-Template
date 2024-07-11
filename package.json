@@ -19,7 +19,9 @@
     "version": "npm run update-changelog && npm run update-docker-version && rm -fr Dockerfile.bck && git add CHANGELOG.md Dockerfile"
   },
   "dependencies": {
+    "antd": "^5.19.1",
     "jest-environment-jsdom": "^29.7.0",
+    "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-intl": "^6.6.8",
@@ -33,6 +35,7 @@
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^15.0.2",
     "@types/jest": "^29.5.12",
+    "@types/lodash": "^4.17.6",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",

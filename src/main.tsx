@@ -3,11 +3,15 @@ import {createRoot, Root} from 'react-dom/client'
 import {IntlProvider} from 'react-intl'
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import {renderWithQiankun, qiankunWindow} from 'vite-plugin-qiankun/dist/helper'
+import {ConfigProvider} from 'antd'
 
 import App from './App.tsx'
 import './index.css'
 import messages from './strings'
 import PromiseComponent from './components/utils/PromiseComponent/index.tsx'
+import {BASE} from './utils.ts'
+import createBaseTheme from './theme/utils/createBaseTheme.ts'
+import createAntTheme from './theme/utils/createAntTheme.ts'
 
 let root: Root
 
@@ -20,19 +24,23 @@ const navigatorLanguage = navigator.language.substring(0, 2)
 const language = messages[navigatorLanguage] ? navigatorLanguage : 'en'
 
 const RootComponent = (pathname: string): React.ReactElement => {
+  const baseTheme = createBaseTheme({alternate: true})
+
   return (
     <React.StrictMode>
-      <PromiseComponent promiseFunction={() => messages[language]}>
-        {(strings: any) => (
-          <IntlProvider locale={language} messages={strings}>
-            <BrowserRouter>
-              <Routes>
-                <Route element={<App />} path='/' />
-              </Routes>
-            </BrowserRouter>
-          </IntlProvider>
-        )}
-      </PromiseComponent>
+      <ConfigProvider theme={createAntTheme(baseTheme)}>
+        <PromiseComponent promiseFunction={() => messages[language]}>
+          {(strings: any) => (
+            <IntlProvider locale={language} messages={strings}>
+              <BrowserRouter basename={pathname}>
+                <Routes>
+                  <Route element={<App />} path='/' />
+                </Routes>
+              </BrowserRouter>
+            </IntlProvider>
+          )}
+        </PromiseComponent>
+      </ConfigProvider>
     </React.StrictMode>
   )
 }
@@ -48,7 +56,7 @@ function render (props: Props = {}) : void {
 
   // Per l'esecuzione in locale e SPA
   if (!qiankunWindow.__POWERED_BY_QIANKUN__) {
-    pathname = './'
+    pathname = BASE
   }
 
   root = createRoot(retrieveContainer(props))

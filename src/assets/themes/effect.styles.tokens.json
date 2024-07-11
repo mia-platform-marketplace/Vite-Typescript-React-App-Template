@@ -1,0 +1,172 @@
+{
+  "boxShadow": {
+    "$type": "shadow",
+    "$value": [
+      {
+        "offsetX": "0px",
+        "offsetY": "2px",
+        "blur": "4px",
+        "spread": "0px",
+        "color": "#00000005"
+      },
+      {
+        "offsetX": "0px",
+        "offsetY": "1px",
+        "blur": "6px",
+        "spread": "-1px",
+        "color": "#00000005"
+      },
+      {
+        "offsetX": "0px",
+        "offsetY": "1px",
+        "blur": "2px",
+        "spread": "0px",
+        "color": "#00000008"
+      }
+    ]
+  },
+  "boxShadowSecondary": {
+    "$type": "shadow",
+    "$value": [
+      {
+        "offsetX": "0px",
+        "offsetY": "9px",
+        "blur": "28px",
+        "spread": "8px",
+        "color": "#0000000d"
+      },
+      {
+        "offsetX": "0px",
+        "offsetY": "3px",
+        "blur": "6px",
+        "spread": "-4px",
+        "color": "#0000001f"
+      },
+      {
+        "offsetX": "0px",
+        "offsetY": "6px",
+        "blur": "16px",
+        "spread": "0px",
+        "color": "#00000014"
+      }
+    ]
+  },
+  "boxShadowTertiary": {
+    "$type": "shadow",
+    "$value": [
+      {
+        "offsetX": "0px",
+        "offsetY": "2px",
+        "blur": "4px",
+        "spread": "0px",
+        "color": "#00000005"
+      },
+      {
+        "offsetX": "0px",
+        "offsetY": "1px",
+        "blur": "6px",
+        "spread": "-1px",
+        "color": "#00000005"
+      },
+      {
+        "offsetX": "0px",
+        "offsetY": "1px",
+        "blur": "2px",
+        "spread": "0px",
+        "color": "#00000008"
+      }
+    ]
+  },
+  "Component": {
+    "Button": {
+      "dangerShadow": {
+        "$type": "shadow",
+        "$value": [
+          {
+            "offsetX": "0px",
+            "offsetY": "{Components.Button.Global.controlOutlineWidth}",
+            "blur": "0px",
+            "spread": "0px",
+            "color": "{Components.Button.Global.colorErrorOutline}"
+          }
+        ]
+      },
+      "defaultShadow": {
+        "$type": "shadow",
+        "$value": [
+          {
+            "offsetX": "0px",
+            "offsetY": "{Components.Button.Global.controlOutlineWidth}",
+            "blur": "0px",
+            "spread": "0px",
+            "color": "{Colors.Brand.Control.controlTmpOutline}"
+          }
+        ]
+      },
+      "primaryShadow": {
+        "$type": "shadow",
+        "$value": [
+          {
+            "offsetX": "0px",
+            "offsetY": "{Components.Button.Global.controlOutlineWidth}",
+            "blur": "0px",
+            "spread": "0px",
+            "color": "{Components.Button.Global.controlOutline}"
+          }
+        ]
+      }
+    },
+    "Input": {
+      "activeShadow": {
+        "$type": "shadow",
+        "$value": [
+          {
+            "offsetX": "0px",
+            "offsetY": "0px",
+            "blur": "0px",
+            "spread": "{Size.Line Width.controlOutlineWidth}",
+            "color": "{Colors.Brand.Control.controlOutline}"
+          }
+        ]
+      },
+      "errorActiveShadow": {
+        "$type": "shadow",
+        "$value": [
+          {
+            "offsetX": "0px",
+            "offsetY": "0px",
+            "blur": "0px",
+            "spread": "{Size.Line Width.controlOutlineWidth}",
+            "color": "{Colors.Brand.Error.colorErrorOutline}"
+          }
+        ]
+      },
+      "warningActiveShadow": {
+        "$type": "shadow",
+        "$value": [
+          {
+            "offsetX": "0px",
+            "offsetY": "0px",
+            "blur": "0px",
+            "spread": "{Size.Line Width.controlOutlineWidth}",
+            "color": "{Colors.Brand.Warning.colorWarningOutline}"
+          }
+        ]
+      }
+    },
+    "Switch": {
+      "handleShadow": {
+        "$type": "shadow",
+        "$value": [
+          {
+            "offsetX": "0px",
+            "offsetY": "2px",
+            "blur": "4px",
+            "spread": "0px",
+            "color": "#00230b33"
+          }
+        ]
+      }
+    }
+  }
+}

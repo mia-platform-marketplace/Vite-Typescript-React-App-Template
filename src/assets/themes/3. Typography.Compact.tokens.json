@@ -1,0 +1,102 @@
+{
+  "Typography": {
+    "Font_Family": {
+      "fontFamily": {
+        "$type": "string",
+        "$value": "SF Pro Text",
+        "$description": "In Figma, we use \"SF Pro Text\" as a default font family. Ant Design of React uses system font family \"-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'\"."
+      },
+      "fontFamilyCode": {
+        "$type": "string",
+        "$value": "Courier Prime",
+        "$description": "In Figma, we use \"Courier Prime\" as a default code font family. Ant Design of React uses system font family \"'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace'\"."
+      }
+    },
+    "Font_Size": {
+      "fontSize": {
+        "$type": "dimension",
+        "$value": "12px"
+      },
+      "fontSizeLG": {
+        "$type": "dimension",
+        "$value": "14px"
+      },
+      "fontSizeSM": {
+        "$type": "dimension",
+        "$value": "10px"
+      },
+      "fontSizeXL": {
+        "$type": "dimension",
+        "$value": "16px"
+      },
+      "fontSizeHeading1": {
+        "$type": "dimension",
+        "$value": "32px"
+      },
+      "fontSizeHeading2": {
+        "$type": "dimension",
+        "$value": "26px"
+      },
+      "fontSizeHeading3": {
+        "$type": "dimension",
+        "$value": "20px"
+      },
+      "fontSizeHeading4": {
+        "$type": "dimension",
+        "$value": "16px"
+      },
+      "fontSizeHeading5": {
+        "$type": "dimension",
+        "$value": "14px"
+      },
+      "fontSizeIcon": {
+        "$type": "dimension",
+        "$value": "12px"
+      }
+    },
+    "Line_Height": {
+      "lineHeight": {
+        "$type": "dimension",
+        "$value": "20px"
+      },
+      "lineHeightLG": {
+        "$type": "dimension",
+        "$value": "22px"
+      },
+      "lineHeightSM": {
+        "$type": "dimension",
+        "$value": "18px"
+      },
+      "lineHeightHeading1": {
+        "$type": "dimension",
+        "$value": "40px"
+      },
+      "lineHeightHeading2": {
+        "$type": "dimension",
+        "$value": "34px"
+      },
+      "lineHeightHeading3": {
+        "$type": "dimension",
+        "$value": "28px"
+      },
+      "lineHeightHeading4": {
+        "$type": "dimension",
+        "$value": "24px"
+      },
+      "lineHeightHeading5": {
+        "$type": "dimension",
+        "$value": "22px"
+      }
+    },
+    "Font_Weight": {
+      "fontWeightNormal": {
+        "$type": "dimension",
+        "$value": "400"
+      },
+      "fontWeightStrong": {
+        "$type": "dimension",
+        "$value": "600"
+      }
+    }
+  }
+}
