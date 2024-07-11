@@ -9,7 +9,7 @@ import App from './App.tsx'
 import './index.css'
 import messages from './strings'
 import PromiseComponent from './components/utils/PromiseComponent/index.tsx'
-import {BASE} from './utils.ts'
+import {BASE} from './utils'
 import createBaseTheme from './theme/utils/createBaseTheme.ts'
 import createAntTheme from './theme/utils/createAntTheme.ts'
 
