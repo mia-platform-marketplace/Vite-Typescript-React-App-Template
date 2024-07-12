@@ -1,0 +1,250 @@
+{
+  "Text Base": {
+    "Normal": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{Typography.Font Family.fontFamily}",
+        "fontSize": "{Typography.Font Size.fontSize}",
+        "fontWeight": 400,
+        "letterSpacing": "0%",
+        "lineHeight": "{Typography.Line Height.lineHeight}",
+        "textTransform": "none",
+        "textDecoration": "none"
+      }
+    },
+    "Strong": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{Typography.Font Family.fontFamily}",
+        "fontSize": "{Components.Alert.Global.fontSize}",
+        "fontWeight": 600,
+        "letterSpacing": "0%",
+        "lineHeight": "{Typography.Line Height.lineHeight}",
+        "textTransform": "none",
+        "textDecoration": "none"
+      }
+    },
+    "Underline": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{Typography.Font Family.fontFamily}",
+        "fontSize": "{Typography.Font Size.fontSize}",
+        "fontWeight": 400,
+        "letterSpacing": "0%",
+        "lineHeight": "{Typography.Line Height.lineHeight}",
+        "textTransform": "none",
+        "textDecoration": "underline"
+      }
+    },
+    "Delete": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{Typography.Font Family.fontFamily}",
+        "fontSize": "{Typography.Font Size.fontSize}",
+        "fontWeight": 400,
+        "letterSpacing": "0%",
+        "lineHeight": "{Typography.Line Height.lineHeight}",
+        "textTransform": "none",
+        "textDecoration": "line-through"
+      }
+    },
+    "Italic": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{Typography.Font Family.fontFamily}",
+        "fontSize": "{Typography.Font Size.fontSize}",
+        "fontWeight": 400,
+        "letterSpacing": "0%",
+        "lineHeight": "{Typography.Line Height.lineHeight}",
+        "textTransform": "none",
+        "textDecoration": "none"
+      }
+    }
+  },
+  "Text SM": {
+    "Normal": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{Typography.Font Family.fontFamily}",
+        "fontSize": "{Typography.Font Size.fontSizeSM}",
+        "fontWeight": 400,
+        "letterSpacing": "0%",
+        "lineHeight": "{Typography.Line Height.lineHeightSM}",
+        "textTransform": "none",
+        "textDecoration": "none"
+      }
+    },
+    "Strong": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{Typography.Font Family.fontFamily}",
+        "fontSize": "{Typography.Font Size.fontSizeSM}",
+        "fontWeight": 600,
+        "letterSpacing": "0%",
+        "lineHeight": "{Typography.Line Height.lineHeightSM}",
+        "textTransform": "none",
+        "textDecoration": "none"
+      }
+    },
+    "Underline": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{Typography.Font Family.fontFamily}",
+        "fontSize": "{Typography.Font Size.fontSizeSM}",
+        "fontWeight": 400,
+        "letterSpacing": "0%",
+        "lineHeight": "{Typography.Line Height.lineHeightSM}",
+        "textTransform": "none",
+        "textDecoration": "underline"
+      }
+    },
+    "Delete": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{Typography.Font Family.fontFamily}",
+        "fontSize": "{Typography.Font Size.fontSizeSM}",
+        "fontWeight": 400,
+        "letterSpacing": "0%",
+        "lineHeight": "{Typography.Line Height.lineHeightSM}",
+        "textTransform": "none",
+        "textDecoration": "line-through"
+      }
+    },
+    "Italic": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{Typography.Font Family.fontFamily}",
+        "fontSize": "{Typography.Font Size.fontSizeSM}",
+        "fontWeight": 400,
+        "letterSpacing": "0%",
+        "lineHeight": "{Typography.Line Height.lineHeightSM}",
+        "textTransform": "none",
+        "textDecoration": "line-through"
+      }
+    }
+  },
+  "Text LG": {
+    "Normal": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{Typography.Font Family.fontFamily}",
+        "fontSize": "{Typography.Font Size.fontSizeLG}",
+        "fontWeight": 400,
+        "letterSpacing": "0%",
+        "lineHeight": "{Typography.Line Height.lineHeightLG}",
+        "textTransform": "none",
+        "textDecoration": "none"
+      }
+    },
+    "Strong": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{Typography.Font Family.fontFamily}",
+        "fontSize": "{Typography.Font Size.fontSizeLG}",
+        "fontWeight": 600,
+        "letterSpacing": "0%",
+        "lineHeight": "{Typography.Line Height.lineHeightLG}",
+        "textTransform": "none",
+        "textDecoration": "none"
+      }
+    },
+    "Underline": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{Typography.Font Family.fontFamily}",
+        "fontSize": "{Typography.Font Size.fontSizeLG}",
+        "fontWeight": 400,
+        "letterSpacing": "0%",
+        "lineHeight": "{Typography.Line Height.lineHeightLG}",
+        "textTransform": "none",
+        "textDecoration": "underline"
+      }
+    },
+    "Delete": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{Typography.Font Family.fontFamily}",
+        "fontSize": "{Typography.Font Size.fontSizeLG}",
+        "fontWeight": 400,
+        "letterSpacing": "0%",
+        "lineHeight": "{Typography.Line Height.lineHeightLG}",
+        "textTransform": "none",
+        "textDecoration": "line-through"
+      }
+    },
+    "Italic": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{Typography.Font Family.fontFamily}",
+        "fontSize": "{Typography.Font Size.fontSizeLG}",
+        "fontWeight": 400,
+        "letterSpacing": "0%",
+        "lineHeight": "{Typography.Line Height.lineHeightLG}",
+        "textTransform": "none",
+        "textDecoration": "none"
+      }
+    }
+  },
+  "Heading": {
+    "1": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{Typography.Font Family.fontFamily}",
+        "fontSize": "{Typography.Font Size.fontSizeHeading1}",
+        "fontWeight": 600,
+        "letterSpacing": "0%",
+        "lineHeight": "{Typography.Line Height.lineHeightHeading1}",
+        "textTransform": "none",
+        "textDecoration": "none"
+      }
+    },
+    "2": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{Typography.Font Family.fontFamily}",
+        "fontSize": "{Typography.Font Size.fontSizeHeading2}",
+        "fontWeight": 600,
+        "letterSpacing": "0%",
+        "lineHeight": "{Typography.Line Height.lineHeightHeading2}",
+        "textTransform": "none",
+        "textDecoration": "none"
+      }
+    },
+    "3": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{Typography.Font Family.fontFamily}",
+        "fontSize": "{Typography.Font Size.fontSizeHeading3}",
+        "fontWeight": 600,
+        "letterSpacing": "0%",
+        "lineHeight": "{Typography.Line Height.lineHeightHeading3}",
+        "textTransform": "none",
+        "textDecoration": "none"
+      }
+    },
+    "4": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{Typography.Font Family.fontFamily}",
+        "fontSize": "{Typography.Font Size.fontSizeHeading4}",
+        "fontWeight": 600,
+        "letterSpacing": "0%",
+        "lineHeight": "{Typography.Line Height.lineHeightHeading4}",
+        "textTransform": "none",
+        "textDecoration": "none"
+      }
+    },
+    "5": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{Typography.Font Family.fontFamily}",
+        "fontSize": "{Typography.Font Size.fontSizeHeading5}",
+        "fontWeight": 600,
+        "letterSpacing": "0%",
+        "lineHeight": "{Typography.Line Height.lineHeightHeading5}",
+        "textTransform": "none",
+        "textDecoration": "none"
+      }
+    }
+  }
+}

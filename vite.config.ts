@@ -4,13 +4,18 @@ import react from '@vitejs/plugin-react-swc'
 import {resolve} from 'path'
 import checker from 'vite-plugin-checker'
 import svgr from 'vite-plugin-svgr'
+import packageJson from './package.json'
+import microLc from './plugins/vite-plugin-micro-lc'
+import { BASE } from './src/utils'
+import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig(({command, mode}) => {
   return {
-    base: './',
+    base: BASE,
     plugins: [
       react(),
+      // microLc(packageJson.name), //TODO: import this only if you use it on microlc env 
       checker({
         typescript: true
       }),
@@ -19,6 +24,12 @@ export default defineConfig(({command, mode}) => {
         include: "**/*.svg",
       })
     ],
+    resolve: {
+      alias: {
+        src: "/src",
+        '@': fileURLToPath(new URL('./src', import.meta.url))
+      },
+    },
     test: {
       globals: true,
       environment: 'jsdom',

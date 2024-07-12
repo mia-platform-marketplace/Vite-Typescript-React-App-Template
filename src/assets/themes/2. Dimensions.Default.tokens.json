@@ -1,0 +1,288 @@
+{
+  "Size": {
+    "sizeStep": {
+      "$type": "dimension",
+      "$value": "4px"
+    },
+    "sizeUnit": {
+      "$type": "dimension",
+      "$value": "4px"
+    },
+    "controlInteractiveSize": {
+      "$type": "dimension",
+      "$value": "16px"
+    },
+    "sizePopupArrow": {
+      "$type": "dimension",
+      "$value": "16px"
+    },
+    "Base": {
+      "sizeXXS": {
+        "$type": "dimension",
+        "$value": "4px"
+      },
+      "sizeXS": {
+        "$type": "dimension",
+        "$value": "8px"
+      },
+      "sizeSM": {
+        "$type": "dimension",
+        "$value": "12px"
+      },
+      "size": {
+        "$type": "dimension",
+        "$value": "16px"
+      },
+      "sizeMS": {
+        "$type": "dimension",
+        "$value": "16px"
+      },
+      "sizeMD": {
+        "$type": "dimension",
+        "$value": "20px"
+      },
+      "sizeLG": {
+        "$type": "dimension",
+        "$value": "24px"
+      },
+      "sizeXL": {
+        "$type": "dimension",
+        "$value": "32px"
+      },
+      "sizeXXL": {
+        "$type": "dimension",
+        "$value": "48px"
+      }
+    },
+    "Height": {
+      "controlHeight": {
+        "$type": "dimension",
+        "$value": "32px"
+      },
+      "controlHeightXL": {
+        "$type": "dimension",
+        "$value": "56px"
+      },
+      "controlHeightLG": {
+        "$type": "dimension",
+        "$value": "40px"
+      },
+      "controlHeightSM": {
+        "$type": "dimension",
+        "$value": "24px"
+      },
+      "controlHeightXS": {
+        "$type": "dimension",
+        "$value": "16px"
+      }
+    },
+    "Line_Width": {
+      "lineWidth": {
+        "$type": "dimension",
+        "$value": "1px"
+      },
+      "lineWidthBold": {
+        "$type": "dimension",
+        "$value": "2px"
+      },
+      "lineWidthFocus": {
+        "$type": "dimension",
+        "$value": "4px"
+      },
+      "controlOutlineWidth": {
+        "$type": "dimension",
+        "$value": "2px"
+      }
+    },
+    "Screen_Size": {
+      "screenLG": {
+        "$type": "dimension",
+        "$value": "992px"
+      },
+      "screenLGMax": {
+        "$type": "dimension",
+        "$value": "1199px"
+      },
+      "screenLGMin": {
+        "$type": "dimension",
+        "$value": "{Size.Screen_Size.screenLG}"
+      },
+      "screenMD": {
+        "$type": "dimension",
+        "$value": "768px"
+      },
+      "screenMDMax": {
+        "$type": "dimension",
+        "$value": "991px"
+      },
+      "screenMDMin": {
+        "$type": "dimension",
+        "$value": "{Size.Screen_Size.screenMD}"
+      },
+      "screenSM": {
+        "$type": "dimension",
+        "$value": "576px"
+      },
+      "screenSMMax": {
+        "$type": "dimension",
+        "$value": "767px"
+      },
+      "screenSMMin": {
+        "$type": "dimension",
+        "$value": "{Size.Screen_Size.screenSM}"
+      },
+      "screenXL": {
+        "$type": "dimension",
+        "$value": "1200px"
+      },
+      "screenXLMax": {
+        "$type": "dimension",
+        "$value": "1599px"
+      },
+      "screenXLMin": {
+        "$type": "dimension",
+        "$value": "{Size.Screen_Size.screenXL}"
+      },
+      "screenXS": {
+        "$type": "dimension",
+        "$value": "480px"
+      },
+      "screenXSMax": {
+        "$type": "dimension",
+        "$value": "575px"
+      },
+      "screenXSMin": {
+        "$type": "dimension",
+        "$value": "{Size.Screen_Size.screenXS}"
+      },
+      "screenXXL": {
+        "$type": "dimension",
+        "$value": "1600px"
+      },
+      "screenXXLMin": {
+        "$type": "dimension",
+        "$value": "{Size.Screen_Size.screenXXL}"
+      }
+    }
+  },
+  "Space": {
+    "Margin": {
+      "margin": {
+        "$type": "dimension",
+        "$value": "{Size.Base.size}"
+      },
+      "marginLG": {
+        "$type": "dimension",
+        "$value": "{Size.Base.sizeLG}"
+      },
+      "marginMD": {
+        "$type": "dimension",
+        "$value": "{Size.Base.sizeMD}"
+      },
+      "marginSM": {
+        "$type": "dimension",
+        "$value": "{Size.Base.sizeSM}"
+      },
+      "marginXL": {
+        "$type": "dimension",
+        "$value": "{Size.Base.sizeXL}"
+      },
+      "marginXS": {
+        "$type": "dimension",
+        "$value": "{Size.Base.sizeXS}"
+      },
+      "marginXXL": {
+        "$type": "dimension",
+        "$value": "{Size.Base.sizeXXL}"
+      },
+      "marginXXS": {
+        "$type": "dimension",
+        "$value": "{Size.Base.sizeXXS}"
+      }
+    },
+    "Padding": {
+      "padding": {
+        "$type": "dimension",
+        "$value": "{Size.Base.size}"
+      },
+      "paddingLG": {
+        "$type": "dimension",
+        "$value": "{Size.Base.sizeLG}"
+      },
+      "paddingMD": {
+        "$type": "dimension",
+        "$value": "{Size.Base.sizeMD}"
+      },
+      "paddingSM": {
+        "$type": "dimension",
+        "$value": "{Size.Base.sizeSM}"
+      },
+      "paddingXL": {
+        "$type": "dimension",
+        "$value": "{Size.Base.sizeXL}"
+      },
+      "paddingXS": {
+        "$type": "dimension",
+        "$value": "{Size.Base.sizeXS}"
+      },
+      "paddingXXS": {
+        "$type": "dimension",
+        "$value": "{Size.Base.sizeXXS}"
+      },
+      "paddingContentHorizontal": {
+        "$type": "dimension",
+        "$value": "{Size.Base.sizeMS}"
+      },
+      "paddingContentHorizontalLG": {
+        "$type": "dimension",
+        "$value": "{Size.Base.sizeLG}"
+      },
+      "paddingContentHorizontalSM": {
+        "$type": "dimension",
+        "$value": "{Size.Base.size}"
+      },
+      "paddingContentVertical": {
+        "$type": "dimension",
+        "$value": "{Size.Base.sizeSM}"
+      },
+      "paddingContentVerticalLG": {
+        "$type": "dimension",
+        "$value": "{Size.Base.sizeMS}"
+      },
+      "paddingContentVerticalSM": {
+        "$type": "dimension",
+        "$value": "{Size.Base.sizeXS}"
+      },
+      "controlPaddingHorizontal": {
+        "$type": "dimension",
+        "$value": "12px"
+      },
+      "controlPaddingHorizontalSM": {
+        "$type": "dimension",
+        "$value": "8px"
+      }
+    }
+  },
+  "Border_Radius": {
+    "borderRadius": {
+      "$type": "dimension",
+      "$value": "6px"
+    },
+    "borderRadiusLG": {
+      "$type": "dimension",
+      "$value": "8px"
+    },
+    "borderRadiusSM": {
+      "$type": "dimension",
+      "$value": "4px"
+    },
+    "borderRadiusXS": {
+      "$type": "dimension",
+      "$value": "2px"
+    },
+    "borderRadiusXL": {
+      "$type": "dimension",
+      "$value": "16px"
+    }
+  }
+}
